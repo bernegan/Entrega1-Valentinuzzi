@@ -1,0 +1,21 @@
+{% extends "home.html" %}
+
+
+{% load static %}
+
+
+{% block contenido %}
+
+<h2 style="color: white;"> Buscador: </h2>
+
+<form action="formulario_buscador" method="FORM">
+    {% csrf_token %}
+
+    <input type="text" name="texto">
+    <button type="submit"> Buscar </button>
+
+
+
+</form>
+
+{% endblock %}
