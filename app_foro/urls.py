@@ -10,9 +10,10 @@ urlpatterns = [
     path('busqueda' , views.Busqueda , name= 'busqueda'),
     path('sorteo' , views.Sorteo , name= 'sorteo'),
     path('formulario_buscador' , views.Formulario_buscador),
-    path('formulario_publicacion' , views.Formulario_publicacion),
-    path('formulario_sorteo' , views.Formulario_sorteo),
-    path('formulario_contacto' , views.Formulario_contacto),
+    path('formulario_publicacion' , views.Formulario_publicacion , name= 'formulario_publicacion'),
+    path('formulario_sorteo' , views.Formulario_sorteo , name='formulario_sorteo'),
+    path('formulario_contacto' , views.Formulario_contacto , name='formulario_contacto'),
     
-    
+
+
 ]
