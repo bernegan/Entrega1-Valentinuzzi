@@ -2,7 +2,7 @@ from django.urls import path
 from app_foro import views
 
 urlpatterns = [
-
+    path('' , views.Home),
     path('home' , views.Home , name= 'home'),
     path('contacto' , views.Contacto , name= 'contacto'),
     path('nosotros' , views.Nosotros , name= 'nosotros'),
@@ -16,4 +16,4 @@ urlpatterns = [
     
 
 
-]
+] 
